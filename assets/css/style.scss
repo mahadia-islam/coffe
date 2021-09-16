@@ -87,14 +87,77 @@ p{
     }
 }
 
+// about section
+
+.about-section{
+    padding: 100px 0px;
+    background: url('./../images/about-section-bg.jpg');
+    background-size: cover;
+    .col-md-6{
+        &:last-child{
+            text-align: center !important;
+            img{
+                width: 60%;
+                margin: auto !important;
+            }
+        }
+    }
+    .col-md-6{
+        .about-text{
+            margin-top: 70px;
+            padding: 50px 30px;
+            width: 100%;
+            background-color: #131c1f;
+            color: #fff;
+            position: relative;
+            h1{
+                font-family: 'Cookie',cursive;
+                font-size: 50px;
+            }
+            p{
+                text-align: justify;
+                font-family: 'Cookie',cursive;
+                font-size: 22px;
+                font-weight: 500;
+            }
+            .icon-box{
+                margin-top: 20px;
+                i{
+                    font-size: 30px;
+                }
+            }
+            button{
+                float: right;
+                position: absolute;
+                left: 70%;
+                top: 95%;
+                padding: 6px 25px;
+                background-color: #fff;
+                color: #131c1f;
+                border: 1px solid #131c1f;
+                font-family: 'Cookie',cursive;
+                font-size: 20px;
+                font-weight: 500;
+                border-top-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }        
+    }    
+}
+
+// service section
+
 .service-section{
     padding: 50px 0px 70px 0px;
+    background:linear-gradient(rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0.404)), url('./../images/about-bg.jpg');
+    background-size: cover;
     h1{
         margin-bottom: 100px !important;
         margin: auto;
+        color: #ffff;
         font-weight: 700;
         font-family: 'Staatliches',sans-serif;
-        border-bottom: 5px solid #222;
+        border-bottom: 5px solid #fff;
         padding-bottom: 20px;
         width: 30%;
         text-align: center;
