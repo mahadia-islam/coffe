@@ -15,6 +15,7 @@ p {
 .header-section {
   background-color: #fff;
   background-size: cover;
+  height: 90px;
 }
 
 .header-section .container .logo img {
@@ -23,32 +24,72 @@ p {
   margin-bottom: 10px;
 }
 
-.header-section .container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 30px !important;
-  margin: auto;
-  width: 80%;
+.header-section .container .col-md-3 {
+  position: relative;
 }
 
-.header-section .container ul li {
+.header-section .container .col-md-3 .menu-bar-box {
+  color: #131c1f;
+  font-size: 30px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.header-section .container .col-md-3 .menu-bar-box:hover {
+  cursor: pointer;
+}
+
+.header-section .container .col-md-3 .menu-box {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  display: none;
+}
+
+.header-section .container .col-md-3 .menu-box.show {
+  display: block;
+}
+
+.header-section .container .col-md-3 .menu-box ul {
+  margin-top: 30px !important;
+  background-color: #fff;
+  padding: 40px 0px !important;
+}
+
+.header-section .container .col-md-3 .menu-box ul li {
   list-style: none;
 }
 
-.header-section .container ul li a {
-  padding: 10px 25px;
-  color: #131c1f;
+.header-section .container .col-md-3 .menu-box ul li a {
+  padding: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  color: #111;
   text-decoration: none;
+  display: block;
+  text-align: center !important;
 }
 
-.header-section .container .icon-box {
-  float: right;
+.header-section .container .col-md-3 .menu-box ul li a:hover {
+  color: #fff;
+  background-color: #131c1f;
 }
 
-.header-section .container .icon-box i {
-  color: #131c1f;
+.header-section .container .col-md-3 .menu-box ul li a i {
   font-size: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.header-section .container .col-md-7 {
+  text-align: center;
+}
+
+.header-section .container .col-md-7 .icon-box i {
+  color: #131c1f;
+  font-size: 30px;
   margin-top: 30px;
   margin-left: 10px;
 }
@@ -97,56 +138,56 @@ p {
 
 .about-section {
   padding: 100px 0px;
-  background: url("./../images/about-section-bg.jpg");
-  background-size: cover;
 }
 
-.about-section .col-md-6:last-child {
+.about-section .col-md-7 {
   text-align: center !important;
 }
 
-.about-section .col-md-6:last-child img {
-  width: 60%;
-  margin: auto !important;
+.about-section .col-md-7 img:first-child {
+  width: 40%;
+  height: 450px;
+  margin-top: 50px;
+  margin-right: 20px;
 }
 
-.about-section .col-md-6 .about-text {
+.about-section .col-md-7 img:last-child {
+  width: 50%;
+}
+
+.about-section .col-md-5 .about-text {
   margin-top: 70px;
   padding: 50px 30px;
   width: 100%;
-  background-color: #131c1f;
-  color: #fff;
+  color: #222;
   position: relative;
 }
 
-.about-section .col-md-6 .about-text h1 {
+.about-section .col-md-5 .about-text h1 {
   font-family: 'Cookie',cursive;
   font-size: 50px;
 }
 
-.about-section .col-md-6 .about-text p {
+.about-section .col-md-5 .about-text p {
   text-align: justify;
   font-family: 'Cookie',cursive;
   font-size: 22px;
   font-weight: 500;
 }
 
-.about-section .col-md-6 .about-text .icon-box {
+.about-section .col-md-5 .about-text .icon-box {
   margin-top: 20px;
 }
 
-.about-section .col-md-6 .about-text .icon-box i {
+.about-section .col-md-5 .about-text .icon-box i {
   font-size: 30px;
 }
 
-.about-section .col-md-6 .about-text button {
-  float: right;
-  position: absolute;
-  left: 70%;
-  top: 95%;
+.about-section .col-md-5 .about-text button {
+  margin-top: 20px;
   padding: 6px 25px;
   background-color: #fff;
-  color: #131c1f;
+  color: #222;
   border: 1px solid #131c1f;
   font-family: 'Cookie',cursive;
   font-size: 20px;
